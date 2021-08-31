@@ -1,11 +1,8 @@
 package com.matheus.osworks.api.controller;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +15,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,7 +22,6 @@ import com.matheus.osworks.domain.model.Cliente;
 import com.matheus.osworks.domain.repository.ClienteRepository;
 import com.matheus.osworks.domain.service.CadastroClienteService;
 
-import ch.qos.logback.classic.Logger;
 
 @RestController
 @RequestMapping("/clientes")
